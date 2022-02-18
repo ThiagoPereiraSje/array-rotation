@@ -10,13 +10,12 @@ Dada uma matriz 'A' de 'N' inteiros e um número, 'D', executar 'D' rotações p
 na matriz. Retorne a matriz atualizada a ser impressa como uma única linha de inteiros 
 separados por espaço.
 
-Obs.: Vou retornar apenas a matriz atualizada.
 */
 
 import { leftRotation } from "../src/leftRotation";
 
 describe("Left Rotation", () => {
-  test("When A is [1, 2, 3, 4, 5] and D is 2 should be return [3, 4, 5, 1, 2]", () => {
-    expect(leftRotation([1, 2, 3, 4, 5], 2)).toEqual([3, 4, 5, 1, 2]);
+  test("When A is [1, 2, 3, 4, 5] and D is 2 should be return '3 4 5 1 2'", () => {
+    expect(leftRotation([1, 2, 3, 4, 5], 2)).toEqual("3 4 5 1 2");
   });
 });

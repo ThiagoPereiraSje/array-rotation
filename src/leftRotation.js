@@ -15,5 +15,5 @@ export function leftRotation(a = [], d = 0) {
   const p2 = a.slice(rotations);
   const result = [].concat(p2, p1);
 
-  return result;
+  return result.join(" ");
 }
