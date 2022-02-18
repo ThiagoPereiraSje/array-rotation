@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "babel-node src/index.js",
-    "test": "jest",
+    "test": "jest --watch",
     "build": "babel src -s -D -d dist --presets env"
   },
   "author": "Thiago Pereira",
