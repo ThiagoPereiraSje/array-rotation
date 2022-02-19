@@ -20,8 +20,8 @@ describe("Left Rotation", () => {
     expect(() => leftRotation(null, 10)).toThrow("A value cannot be NULL");
   });
 
-  test("When A value is UNDEFINED should be return 'A value cannot be []'", () => {
-    expect(() => leftRotation(undefined, 10)).toThrow("A value cannot be []");
+  test("When A value is UNDEFINED should be return 'A value cannot be NULL'", () => {
+    expect(() => leftRotation(undefined, 10)).toThrow("A value cannot be NULL");
   });
 
   test("When A value is [] should be return 'A value cannot be []'", () => {

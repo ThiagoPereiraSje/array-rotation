@@ -1,5 +1,5 @@
-export function leftRotation(a = [], d = 0) {
-  if (a === null) {
+export function leftRotation(a, d) {
+  if ([null, undefined].includes(a)) {
     throw new Error("A value cannot be NULL");
   }
 
@@ -11,12 +11,10 @@ export function leftRotation(a = [], d = 0) {
     throw new Error("D value cannot be NULL");
   }
 
-  let rotations = 0;
+  let rotations = d;
 
   if (d >= a.length) {
     rotations = d % a.length;
-  } else {
-    rotations = d;
   }
 
   if (rotations === 0) {
